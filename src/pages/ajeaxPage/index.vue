@@ -18,7 +18,7 @@
         list: []
       }
     },       
-    //页面初始化请求数据
+    ////页面初始化请求数据
     async beforeMount() {
    
       var url = 'http://192.168.100.146:7001/api/buildings/pc/list'
