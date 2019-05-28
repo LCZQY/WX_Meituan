@@ -16,6 +16,7 @@
       <!--轮播图-->
       <div class="ub-box ub-ver z-bg-color-fff">
         <swiper class="swiper" indicator-dots="false" autoplay="false" interval="5000" duration="500">
+          <!-- 循环图片 -->
           <block v-for="(item, idx) in imgUrls" :key="idx">
             <swiper-item>
               <image :src="item" class="z-width-100-percent" mode="widthFix"/>
@@ -31,7 +32,8 @@
         </div>
       </dl>
       <!--广告-->
-      <dl class="ub-box ub-wrap z-margin-top-6-px z-padding-v-5-px" style="background:#fff">
+     <h3 @click.stop="$openWin('/pages/ajeaxPage/main')">今日推荐</h3>
+      <dl class="ub-box ub-wrap z-margin-top-6-px z-padding-v-5-px" style="background:#fff">       
         <dd @click.stop="$openWin('/pages/error/main')" class="adv ub-flex-1 z-box-sizing-border ub-box ub-ver ub-col">
           <span class="z-font-size-14 z-lineHeight-36" style="color:#55a40f">我们约吧</span>
           <span class="z-font-size-12 z-color-666">恋人家人好朋友</span>
@@ -74,7 +76,8 @@
         imgUrls: [
           'http://p1.meituan.net/codeman/826a5ed09dab49af658c34624d75491861404.jpg',
           'http://p0.meituan.net/codeman/a97baf515235f4c5a2b1323a741e577185048.jpg',
-          'http://p0.meituan.net/codeman/daa73310c9e57454dc97f0146640fd9f69772.jpg'
+          'http://p0.meituan.net/codeman/daa73310c9e57454dc97f0146640fd9f69772.jpg',
+          'http://p0.meituan.net/codeman/daa73310c9e57454dc97f0146640fd9f69772.jpg'          
         ],
         iconMap: {
           'icon-caigou': {title: '美食', bk: '#EF8B3E'}, 
@@ -91,12 +94,16 @@
       }
     },
     methods: {
-      async initAjax() {
-        let ret = await this.$ajax({url: 'https://devapi.ynshuke.com/v1/banners'})
-        console.log(ret)
-      }
+      // async initAjax() {
+      //   let ret = await this.$ajax({url: 'http://192.168.100.146:7001/api/buildings/pc/list',method:'POST', data:{
+      //     "pageIndex": 0,
+      //     "pageSize": 20
+      //   }})
+      //   console.log(ret,"initAjax")
+      // }
     },
     mounted() {
+
       // this.initAjax()
     },
     onPullDownRefresh() {

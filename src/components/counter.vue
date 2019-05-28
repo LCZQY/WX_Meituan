@@ -1,3 +1,4 @@
+<!-- 计数器组件 -->
 <template>
 	<div class="ub-box ub-ver-v z-width-100-percent">
     <ul class="counter z-width-100-percent ub-box">

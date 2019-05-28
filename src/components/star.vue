@@ -1,3 +1,4 @@
+<!-- 评价星级组件 -->
 <template>
 	<div class="ub-box ub-ver-v z-width-100-percent">
       <div v-for="(val, i) in currArrNum" :key="i" class="stars iconfont icon-shoucang">

@@ -1,3 +1,4 @@
+<!--城市组件 -->
 <template>
 	<div class="z-width-100-percent">
     <scroll-view scroll-y style="height:calc(100vh);" scroll-top="0" :scroll-into-view=currView>

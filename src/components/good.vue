@@ -1,3 +1,4 @@
+<!-- 商品卡片组件 -->
 <template>
   <div @click.stop="gotoDetail(good.goodId)" class="card ub-box z-padding-v-10-px" :class="{'z-border-bottom-1-eee':isLast==false}">
       <img :src="good.img" class="z-img-cover">

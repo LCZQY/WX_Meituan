@@ -94,6 +94,7 @@
         })
       },
       clickSearchItem(val) {
+        console.log(val,"当前搜索的值！");
         this.$redirectTo('/pages/error/main')
       },
     },
